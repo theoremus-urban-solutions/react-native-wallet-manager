@@ -1,34 +1,29 @@
-<a href="https://dev.family/?utm_source=github&utm_medium=react-native-wallet-manager&utm_campaign=readme"><img width="auto" center src="https://github.com/dev-family/react-native-wallet-manager/blob/main/docs/logo.png?raw=true" /></a>
-
-# react-native-wallet-manager
+# @theoremus/react-native-wallet-manager
 
 This library provides integration with both Apple Wallet on iOS and Google Wallet on Android. It allows you to add, remove, and check for existing passes on iOS, and add passes to Google Wallet on Android.
 
-[![npm version](https://badge.fury.io/js/react-native-wallet-manager.svg)](https://www.npmjs.org/package/react-native-wallet-manager)
-[![npm](https://img.shields.io/npm/dt/react-native-wallet-manager.svg)](https://www.npmjs.org/package/react-native-wallet-manager)
+**Fork Notice:** This is a fork of [react-native-wallet-manager](https://github.com/theoremus-urban-solutions/react-native-wallet-manager) maintained by Theoremus with additional features and improvements.
+
+[![npm version](https://badge.fury.io/js/%40theoremus%2Freact-native-wallet-manager.svg)](https://www.npmjs.org/package/@theoremus/react-native-wallet-manager)
 [![MIT](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
 <br>
 [![Platform - Android](https://img.shields.io/badge/platform-Android-3ddc84.svg?style=flat&logo=android)](https://www.android.com)
 [![Platform - iOS](https://img.shields.io/badge/platform-iOS-000.svg?style=flat&logo=apple)](https://developer.apple.com/ios)
 
- <a href="https://x.com/i/flow/login?redirect_after_login=%2Fdev___family">
-    <img src="https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20@dev___family" alt="Twitter" />
-  </a>
-
-| <img width="230" height="auto" src="https://github.com/dev-family/react-native-wallet-manager/blob/main/docs/ios.gif?raw=true" /> | <img width="230" height="auto" src="https://raw.githubusercontent.com/dev-family/react-native-wallet-manager/refs/heads/main/docs/android.gif?raw=true" /> |
+| <img width="230" height="auto" src="https://github.com/theoremus-urban-solutions/react-native-wallet-manager/blob/main/docs/ios.gif?raw=true" /> | <img width="230" height="auto" src="https://raw.githubusercontent.com/dev-family/react-native-wallet-manager/refs/heads/main/docs/android.gif?raw=true" /> |
 | :-------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                iOS                                                                |                                                                          Android                                                                           |
 
 ## Installation
 
 ```sh
-yarn add react-native-wallet-manager
+yarn add @theoremus/react-native-wallet-manager
 ```
 
 or
 
 ```sh
-npm install react-native-wallet-manager
+npm install @theoremus/react-native-wallet-manager
 ```
 
 ## Setup
@@ -73,7 +68,7 @@ For platform-specific instructions on how to create passes:
 To use this library, start by importing it into your React Native component:
 
 ```javascript
-import WalletManager from 'react-native-wallet-manager';
+import WalletManager from '@theoremus/react-native-wallet-manager';
 ```
 
 ## API
@@ -150,7 +145,7 @@ Adds a pass from a specified URL. This method is supported on both iOS and Andro
 const addPass = async () => {
   try {
     const result = await WalletManager.addPassFromUrl(
-      'https://github.com/dev-family/react-native-wallet-manager/blob/main/example/resources/pass.pkpass?raw=true'
+      'https://github.com/theoremus-urban-solutions/react-native-wallet-manager/blob/main/example/resources/pass.pkpass?raw=true'
     );
     console.log(result);
   } catch (e) {

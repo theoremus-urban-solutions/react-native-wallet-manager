@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "https://github.com/dev-family/react-native-wallet-manager.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/theoremus-urban-solutions/react-native-wallet-manager.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
 
